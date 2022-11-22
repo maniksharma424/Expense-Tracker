@@ -1,0 +1,207 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.maincontainer{
+    position: relative;
+    top: 100px;
+    left: 470px;
+    display: flex;
+    flex-direction: row;
+}
+#inc-card{
+    display: flex;
+    transform-style: preserve-3d;
+    transition: 0.6s all ease-in-out;
+}
+#exp-card{
+    display: flex;
+    transform-style: preserve-3d;
+    transition: 0.6s all ease-in-out;
+}
+.inc-back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.exp-back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+.inc-front,.exp-front{
+    height: 350px;
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    backface-visibility: hidden;
+   
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+.inc-front{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.exp-front{
+    background-color: hsl(184, 100%, 22%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.title{
+
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+
+}
+.inc-text p{
+    
+    margin: 0px;
+    padding: 0px;
+}
+.add-inc button{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    font-size: larger;
+
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.exp-text p{
+    margin: 0px;
+    padding: 0px;
+}
+.add-exp button{
+    color: white;
+    background-color:hsl(184, 100%, 22%);
+    font-size: larger;
+
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+}
+.inc-back,.exp-back{
+    height: 350px;
+    width: 250px;
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+   
+}
+.inc-back{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.exp-back{
+    background-color: hsl(184, 100%, 22%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.inc-back input{
+
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.exp-back input{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.inc-back button{
+    padding: 10px 40px;
+}
+.add-exp button{
+    padding: 10px 40px;
+}
+.exp-back button{
+    background-color: hsl(184, 100%, 22%);
+}
+.history{
+    position: relative;
+    top: 150px;
+    left: 470px;
+    width: 500px;
+    height: fit-content;
+
+    font-family: 'Lexend Deca', sans-serif;
+}
+.new-month{
+    display: flex;
+    justify-content: space-between;
+}
+.new-month button{
+    background-image: linear-gradient(to right, #006970, #037d64, #518b43, #96911d, #e38826);
+    border: 1px solid hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    border-radius: 5px;
+    height: 28px;
+    padding: 0px 15px;
+    
+
+}
+.clear-btn{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+.clear-btn button{
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, #e38826, #96911d, #518b43, #037d64, #006970);
+    border: 1px solid hsl(179, 100%, 13%);
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 5px;
+}
+#li-el{
+    display: flex;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 10px;
+
+}
+.ulel-discription{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+
+    flex-grow: 3;
+
+}
+.ulel-amount{
+    padding-right: 10px;
+    align-items: center;
+    flex-grow: 2;
+    justify-content: flex-end;
+    display: flex;
+
+}
+.ulel-color{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-grow: 0.1;
+}
+

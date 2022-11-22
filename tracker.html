@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script defer src="https://kit.fontawesome.com/6bd0713aad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tracker.css">
+    <script defer src="tracker.js"></script>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="Income">
+            <div id="inc-card">
+                <div class="inc-front">
+                        <div class="title">
+                            <h1>Income</h1>
+                            <h1>$</h1>
+                            <h1 id="income-value">0</h1>
+                        </div>
+                        <div class="inc-text">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="add-inc">
+                            <button onclick="RotateINC()" id="add-incomeBtn">Add Income</button>
+                        </div>
+                </div>
+                <div class="inc-back">
+                    <div class="amount">
+                        <p>Amount</p>
+                        <input id="INC-input-amount" type="number">
+                    </div>
+                    
+                    <div class="description">
+                        <p>Description</p>
+                        <input id="INC-input-description" type="text">
+                    </div>
+                    <div class="add-inc">
+                        <button onclick="AddIncome()" >ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Expense">
+            <div id="exp-card">
+                <div class="exp-front">
+                    <div class="title">
+                        <h1>Expense</h1>
+                        <h1>$</h1>
+                        <h1 id="expense-value">0</h1>
+                    </div>
+                    <div class="exp-text">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="add-exp">
+                        <button onclick="RotateEXP()" >Add Expense</button>
+                    </div>
+                </div>
+                <div class="exp-back">
+                    <div class="amount">
+                        <p>Amount</p>
+                        <input id="EXP-input-amount" type="number">
+                    </div>
+                    
+                    <div class="description">
+                        <p>Description</p>
+                        <input id="EXP-input-description" type="text">
+                    </div>
+                    <div class="add-exp">
+                        <button onclick="AddExpense()" >ADD</button>
+                    </div>
+        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="history">
+        <div class="new-month">
+            <h1>History</h1>
+            <button id="new-month-btn">New Month</button>
+        </div>
+        <hr>
+        <div class="clear-btn"><button id="clear-button">Clear History</button></div>
+        <div class="listbox">
+            <ul id="ul-el">
+                
+            </ul>
+        </div>
+    </div>
+    
+
+</body>
+</html>
