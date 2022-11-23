@@ -397,7 +397,7 @@ h1{
     border-top-right-radius: 6px;
     width: 10px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
    .heading{
     position: relative;
     display: flex;
@@ -478,46 +478,8 @@ h1{
     width: 90px;
     font-size: smaller;
   }
-  .add-inc button{
-   
-    -webkit-perspective: 115px;
-    perspective: 115px;
-  }
 
-  .add-inc button span:nth-child(1) {
-    transform: rotateX(90deg);
-    -webkit-transform: rotateX(90deg);
-    transform-origin: 25% 25% -10px;
-    -webkit-transform-origin: 25% 25% -10px;
-  }
-  .add-inc button span:nth-child(2) {
-    -webkit-transform: rotateX(0deg);
- 
-    transform: rotateX(0deg);
-    -webkit-transform-origin: 25% 25% -10px;
-   
-    transform-origin: 25% 25% -10px;
-  }
-  .add-exp button{
-   
-    -webkit-perspective: 115px;
-    perspective: 115px;
-  }
 
-  .add-exp button span:nth-child(1) {
-    transform: rotateX(90deg);
-    -webkit-transform: rotateX(90deg);
-    transform-origin: 25% 25% -10px;
-    -webkit-transform-origin: 25% 25% -10px;
-  }
-  .add-exp button span:nth-child(2) {
-    -webkit-transform: rotateX(0deg);
- 
-    transform: rotateX(0deg);
-    -webkit-transform-origin: 25% 25% -10px;
-   
-    transform-origin: 25% 25% -10px;
-  }
   
   
 
