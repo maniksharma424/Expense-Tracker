@@ -440,7 +440,12 @@ h1{
     border-top-right-radius: 6px;
     width: 5px;
 }
-  
+.add-inc button,.add-inc button span,
+.add-exp button,.add-exp button span
+  {
+    width: 90px;
+    font-size: smaller;
+  }
   }
 
 
