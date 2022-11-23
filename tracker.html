@@ -20,8 +20,7 @@
                 <div class="inc-front">
                         <div class="title">
                             <h1>Income</h1>
-                            <h1>$</h1>
-                            <h1 id="income-value">0</h1>
+                            <p>$<h1 id="income-value">0</h1></p>
                         </div>
                         <div class="inc-text">
                             <p>Click on the button below </p>
@@ -30,7 +29,7 @@
                             
                         </div>
                         <div class="add-inc">
-                            <button onclick="RotateINC()" id="add-incomeBtn">Add Income</button>
+                            <button id="add-incomeBtn" onclick="RotateINC()"><span>Click!</span><span>ADD INCOME</span></button>
                         </div>
                 </div>
                 <div class="inc-back">
@@ -44,7 +43,7 @@
                         <input id="INC-input-description" type="text">
                     </div>
                     <div class="add-inc">
-                        <button onclick="AddIncome()" >ADD</button>
+                        <button id="add-incomeBtn" onclick="AddIncome()"><span>Click!</span><span>ADD INCOME</span></button>
                     </div>
                 </div>
             </div>
@@ -54,8 +53,8 @@
                 <div class="exp-front">
                     <div class="title">
                         <h1>Expense</h1>
-                        <h1>$</h1>
-                        <h1 id="expense-value">0</h1>
+                        <p>$<h1 id="expense-value">0</h1></p>
+                        
                     </div>
                     <div class="exp-text">
                         <p>Click on the button below</p>
@@ -64,7 +63,7 @@
                         
                     </div>
                     <div class="add-exp">
-                        <button onclick="RotateEXP()" >Add Expense</button>
+                        <button  onclick="RotateEXP()"><span>Click!</span><span>ADD EXPENSE</span></button>
                     </div>
                 </div>
                 <div class="exp-back">
@@ -78,7 +77,7 @@
                         <input id="EXP-input-description" type="text">
                     </div>
                     <div class="add-exp">
-                        <button onclick="AddExpense()" >ADD</button>
+                        <button  onclick="AddExpense()"><span>Click!</span><span>ADD</span></button>
                     </div>
         
                 </div>
@@ -99,6 +98,12 @@
             </ul>
         </div>
     </div>
+
+
+
+
+
+
     
 
 </body>

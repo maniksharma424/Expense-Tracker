@@ -71,7 +71,15 @@ h1{
 
     display: flex;
     justify-content: space-around;
-    width: 60%;
+    width: 80%;
+
+}
+.title p{
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
 
 }
 .inc-text p{
@@ -80,29 +88,148 @@ h1{
     padding: 0px;
 }
 .add-inc button{
-    color: white;
     background-color: hsl(31, 77%, 52%);
-    font-size: larger;
+    position: relative;
 
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 45px;
-    cursor: grab;
-}
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 180px;
+    height: 40px;
+    line-height: 42px;
+
+    perspective: 230px;
+  }
+  .add-inc button span {
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+    background: hsl(31, 77%, 52%);
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    font-size: large;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 180px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 0px;
+    margin:0;
+    text-align: center;
+
+    box-sizing: border-box;
+    
+    transition: all .3s;
+  }
+  .add-inc button span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+
+    transform: rotateX(90deg);
+   
+    transform-origin: 50% 50% -20px;
+  }
+  .add-inc button span:nth-child(2) {
+ 
+    transform: rotateX(0deg);
+   
+    transform-origin: 50% 50% -20px;
+  }
+  .add-inc button:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+ 
+    transform: rotateX(0deg);
+  }
+  .add-inc button:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    color: transparent;
+    transform: rotateX(-90deg);
+  }
+
+
 .exp-text p{
     margin: 0px;
     padding: 0px;
 }
 .add-exp button{
-    color: white;
-    background-color:hsl(184, 100%, 22%);
-    font-size: larger;
-    cursor: grab;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 10px 20px;
+    background-color: hsl(184, 100%, 22%);
+    position: relative;
 
-}
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 180px;
+    height: 40px;
+    line-height: 42px;
+
+    perspective: 230px;
+  }
+  .add-exp button span {
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+    background: hsl(184, 100%, 22%);
+    background-color: hsl(184, 100%, 22%);
+    color: white;
+    font-size: large;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    width: 180px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 0px;
+    margin:0;
+    text-align: center;
+
+    box-sizing: border-box;
+    
+    transition: all .3s;
+  }
+  .add-exp button span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+
+    transform: rotateX(90deg);
+   
+    transform-origin: 50% 50% -20px;
+  }
+  .add-exp button span:nth-child(2) {
+ 
+    transform: rotateX(0deg);
+   
+    transform-origin: 50% 50% -20px;
+  }
+  .add-exp button:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+ 
+    transform: rotateX(0deg);
+  }
+  .add-exp button:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    color: transparent;
+    transform: rotateX(-90deg);
+  }
+  
 .inc-back,.exp-back{
     height: 350px;
     width: 250px;
@@ -136,12 +263,7 @@ h1{
     padding: 10px;
     border: 1px solid black;
 }
-.inc-back button{
-    padding: 10px 40px;
-}
-.add-exp button{
-    padding: 10px 40px;
-}
+
 .exp-back button{
     background-color: hsl(184, 100%, 22%);
 }
@@ -243,3 +365,30 @@ h1{
   
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
