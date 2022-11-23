@@ -116,7 +116,8 @@ function renderlist(array){
         if(array[i].type === 'income'){
     addhtml = addhtml+ `
     <li id="li-el">
-        <div class="ulel-discription">${array[i].description}<h6 style="color: hsl(31, 77%, 52%);" >(${day} - ${month} - ${year})</h6></div>
+        <div class="ulel-del"><button  style="color: hsl(31, 77%, 52%);"><i class="fa-sharp fa-solid fa-delete-left fa-2xl"></i></button></div>
+        <div class="ulel-discription">${array[i].description}</div><div class="ulel-date"><h6 style="color: hsl(31, 77%, 52%);" >(${day} - ${month} - ${year})</h6></div>
         <div class="ulel-amount">$${array[i].amount}</div>
         <div style="background-color: hsl(31, 77%, 52%);" class="ulel-color"></div>
     </li>`
@@ -124,7 +125,9 @@ function renderlist(array){
     if(array[i].type === 'expense'){
         addhtml = addhtml+ `
     <li id="li-el">
-        <div class="ulel-discription">${array[i].description}<h6 style="color: hsl(184, 100%, 22%);">(${day} - ${month} - ${year})</h6></div>
+        <div  class="ulel-del"><button  style="color: hsl(184, 100%, 22%);"><i class="fa-sharp fa-solid fa-delete-left fa-2xl"></i></button></div>
+
+        <div class="ulel-discription">${array[i].description}</div><div class ="ulel-date"><h6 style="color: hsl(184, 100%, 22%);">(${day} - ${month} - ${year})</h6></div>
         <div class="ulel-amount">$${array[i].amount}</div>
         <div style="background-color: hsl(184, 100%, 22%);" class="ulel-color"></div>
     </li>`
@@ -132,10 +135,35 @@ function renderlist(array){
     }
     UlEl.innerHTML = addhtml
 }
+UlEl.addEventListener('click',(e)=>{
+
+    e.path[3].remove()
+    let name = e.path[3].firstElementChild.nextElementSibling.innerText
+    let index 
+
+    let MYarray = JSON.parse(localStorage.getItem('listitems'))
+    console.log(MYarray);
+    for(let i=0; i<MYarray.length; i++){
+        if(MYarray[i].description === name){
+            index = i
+        }
+    }
+    RemoveEntry(index)
+
+})
+function RemoveEntry(num){
+
+    let MYarray = JSON.parse(localStorage.getItem('listitems'))
+    localStorage.removeItem('listitems')
+    MYarray.splice(num,1)
+    localStorage.setItem('listitems',JSON.stringify(MYarray))
+
+}
 ClearBtn.addEventListener('click',()=>{
     UlEl.innerHTML = ''
     localStorage.removeItem('listitems')
 })
+
 NewMonthBtn.addEventListener('click',()=>{
     localStorage.removeItem('moneyincome')
     localStorage.removeItem('moneyexpense')

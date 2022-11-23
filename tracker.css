@@ -19,6 +19,7 @@ body{
     left: 470px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 #inc-card{
     display: flex;
@@ -305,65 +306,143 @@ h1{
     font-family: 'Lexend Deca', sans-serif;
     border-radius: 5px;
 }
+.clear-btn button:hover{
+    cursor: grab;
+    background-color: white;
+}
 #li-el{
     display: flex;
     height: 40px;
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right:none;
     border-right: none;
     margin-top: 5px;
     border-radius: 8px;
 
 }
+.ulel-del{
+
+    display: flex;
+    align-content: center;
+    width: 50px;
+    justify-content: center;
+
+
+}
+.ulel-del button{
+    
+    background-color: none;
+    cursor: grab;
+    border: none;
+}
+
 .ulel-discription{
+
     padding-left: 10px;
     display: flex;
     align-items: center;
-
-
-    flex-grow: 3;
-
+    width: 220px;
 }
+.ulel-date{
+
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
 .ulel-amount{
+
     padding-right: 10px;
     align-items: center;
-    flex-grow: 2;
+    width: 110px;
     justify-content: flex-end;
     display: flex;
 
 }
 .ulel-color{
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    flex-grow: 0.1;
+   
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 10px;
 }
 @media screen and (max-width: 400px) {
-    .heading{
-        position: relative;
-        left: 110px;
-    }
-  .maincontainer{
+   .heading{
     position: relative;
-    left: 110px;
-  }  .history{
+    display: flex;
+    left: 80px;
+    top: 20px;
+    justify-content: flex-start;
+   }
+   .maincontainer{
+    display: flex;
     position: relative;
-    left: 110px;
-  }
+    left: 50px;
+   }
+   .inc-front,.inc-back,.exp-front,.exp-back{
+    border-radius: 0px;
+   }
+   .history{
+    position: relative;
+    left: 50px;
+    width: 250px;
+   }
+   .clear-btn{
+    width: 250px;
+    margin-bottom: 30px;
+   }
+   #li-el{
+    border:none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+   }
+   .ulel-del{
+    display: flex;
+    align-content: center;
+    width: 30px;
+    justify-content: center;
+
+
+}
+.ulel-del button{
+    border-radius: 8px;
+}
+   .ulel-discription{
+    font-size: small;
+
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 110px;
+}
+   .ulel-date{
+    font-size: smaller;
+
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+
+.ulel-amount{
+    font-size: small;
+
+    padding-right: 10px;
+    align-items: center;
+    width: 45px;
+    justify-content: flex-end;
+    display: flex;
+
+}
+.ulel-color{
+
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 5px;
+}
   
   }
-@media screen and (max-width: 300px) {
-    .heading{
-        position: relative;
-        left: 40px;
-    }
-  .maincontainer{
-    position: relative;
-    left: 40px;
-  }  .history{
-    position: relative;
-    left: 40px;
-  }
-  
-  }
+
 
 
 
