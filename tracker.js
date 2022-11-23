@@ -136,7 +136,6 @@ function renderlist(array){
     UlEl.innerHTML = addhtml
 }
 UlEl.addEventListener('click',(e)=>{
-    alert("rendering")
 
     e.path[3].remove()
     let name = e.path[3].firstElementChild.nextElementSibling.innerText
