@@ -399,6 +399,8 @@ h1{
     position: relative;
     left: 50px;
     width: 250px;
+    height: fit-content;
+    margin-bottom: 50px;
    }
    .clear-btn{
     width: 250px;
@@ -408,17 +410,17 @@ h1{
     border:none;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    border-left: 1px solid black;
    }
    .ulel-del{
     display: flex;
     align-content: center;
     width: 30px;
     justify-content: center;
-
-
 }
 .ulel-del button{
-    border-radius: 8px;
+    border-radius: 12px;
+
 }
    .ulel-discription{
     font-size: small;
