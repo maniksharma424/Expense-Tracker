@@ -24,22 +24,27 @@ body{
 #inc-card{
     display: flex;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: 0.5s all ease-in-out;
 }
 #exp-card{
     display: flex;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: 0.5s all ease-in-out;
 }
 .inc-back{
+  -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-}
+    -webkit-transform: rotateY(180deg);
+  }
 
 .exp-back{
+   -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-
+    -webkit-transform: rotateY(180deg);
 }
 .inc-front,.exp-front{
     height: 350px;
@@ -52,6 +57,7 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     position: absolute;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
    
 }
 h1{
