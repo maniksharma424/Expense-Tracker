@@ -109,8 +109,6 @@ h1{
   }
   .add-inc button span {
     font-family: 'Lexend Deca', sans-serif;
-
-    
     background: hsl(31, 77%, 52%);
     background-color: hsl(31, 77%, 52%);
     color: white;
@@ -188,7 +186,7 @@ h1{
   }
   .add-exp button span {
     font-family: 'Lexend Deca', sans-serif;
-
+  
     
     background: hsl(184, 100%, 22%);
     background-color: hsl(184, 100%, 22%);
@@ -357,6 +355,26 @@ h1{
     margin-top: 5px;
     border-radius: 8px;
 
+    animation: animate 1.5s;
+
+}
+@keyframes animate {
+  0%{
+    position: relative;
+    left: 20px;
+  }
+  25%{
+    position: relative;
+    left: 70px;
+  }
+  50%{
+    position: relative;
+    left: 150px;
+  }
+  100%{
+    position: relative;
+    left: 240px;
+  }
 }
 .ulel-del{
 
@@ -435,6 +453,7 @@ h1{
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     border-left: 1px solid black;
+
    }
    .ulel-del{
     display: flex;
