@@ -355,25 +355,17 @@ h1{
     margin-top: 5px;
     border-radius: 8px;
 
-    animation: animate 1.5s;
+    animation: animate  .7s;
 
 }
 @keyframes animate {
   0%{
     position: relative;
-    left: 20px;
-  }
-  25%{
-    position: relative;
-    left: 70px;
-  }
-  50%{
-    position: relative;
-    left: 150px;
-  }
+    right: 600px;
+  } 
   100%{
     position: relative;
-    left: 240px;
+    right :0px;
   }
 }
 .ulel-del{
